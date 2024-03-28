@@ -1,12 +1,10 @@
 import './App.css'
 import ResumeEmbed from './ResumeEmbed';
-import { ThreeJSExample } from './ThreeJSExample';
 
 function App() {
   return (
     <>
-      <p style={{ color: 'lightgreen', fontWeight: 'bolder' }}>แคร์นะจ๊ะ</p>
-      <ThreeJSExample/>
+      <p style={{ color: 'lightgreen', fontWeight: 'bolder' }}>In progress...</p>
       <ResumeEmbed/>
     </>
   )
