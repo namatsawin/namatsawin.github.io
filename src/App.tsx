@@ -1,20 +1,9 @@
 import { motion } from "framer-motion"
 
 import ButtonCube from './components/ButtonCube'
-import TextTypingAnimation from './components/TextTypingAnimation'
 import HumanImage from './assets/images/human.webp'
 
-function getRndInteger(min: number, max: number) {
-  return Math.floor(Math.random() * (max - min + 1) ) + min;
-}
-
 function App() {
-  
-  const getRndPosition = () => {
-    const clientRect=  document.body.getBoundingClientRect()
-    return { x:  getRndInteger(0, clientRect.width), y: getRndInteger(0, clientRect.height)}
-  }
-
   return (
     <motion.div className="my-auto mx-10 rounded-xl max-w-[1366px]">
       <div className="flex flex-col gap-6 p-10 relative">
