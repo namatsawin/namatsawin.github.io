@@ -1,51 +1,76 @@
 import { motion } from "framer-motion"
 
-import ButtonCube from './components/ButtonCube'
+import ButtonCube from './components/Button'
+import GlowWrapper from './components/GlowWrapper'
 import HumanImage from './assets/images/human.webp'
+import FallingStar from "./components/FallingStar"
+import { useState } from "react"
+import About from "./About"
 
 function App() {
+  const [aboutModal, setAboutModal] = useState(false)
+
   return (
-    <motion.div className="my-auto mx-10 rounded-xl max-w-[1366px]">
-      <div className="flex flex-col gap-6 p-10 relative">
-        <h1 className="text-yellow-500 text-3xl font-bold">
-          NAMATSAWIN BUNTARAWA
-        </h1>
-        <div className="max-w-[70%]">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+    <motion.div className="my-auto mx-10 rounded-xl max-w-[1366px] h-full">
+      <motion.div 
+        className="flex flex-col gap-10 p-0 md:p-10 relative"
+        initial={{
+          opacity: 0,
+          y: -25, 
+          x: -25
+        }}
+        animate={{
+          opacity: 1,
+          y: 0,  
+          x: 0
+        }}
+        transition={{
+          delay: .6,
+          duration: 1,
+          ease: 'easeOut',
+        }}
+      >
+       
+       <GlowWrapper>
+          <h1 className="w-fit p-0 text-yellow-500 text-3xl font-bold text-center md:text-left" style={{ textShadow: '1px 1px 2px #facc15'}}>
+            NAMATSAWIN BUNTARAWA
+          </h1>
+       </GlowWrapper>
+     
+
+        <div className="text-center md:max-w-[70%] md:text-left">
+        I am a passionate individual with a fervent dedication to crafting outstanding digital experiences. My enthusiasm for innovation and continuous learning fuels my ability to quickly adapt and contribute effectively to diverse teams and projects.
         </div>
-        <div className="flex gap-5 py-10">
-          <ButtonCube>
-            ABOUT
+
+        <div className="grid md:flex gap-5 py-10">
+          <ButtonCube onClick={() => setAboutModal(!aboutModal)}>
+            About
           </ButtonCube>
           <ButtonCube>
-            PORTFOLIO
+            Experience
           </ButtonCube>
           <ButtonCube>
-            CONTACT
+            Portfolio
+          </ButtonCube>
+          <ButtonCube>
+            Contact
           </ButtonCube>
         </div>
 
         <motion.img 
           src={HumanImage} 
-          className="opacity-30 absolute right-0 bottom-0 border-b-[50px] border-r-[50px] border-yellow-600 rounded-[100%]" 
-          width={500} 
-          height={500}
+          className="absolute right-[30px] bottom-0 opacity-30 border-none border-yellow-600 rounded-[50%]"
+          width={500}
+          height={500} 
           animate={{
             y: [0, -10, 0, 10, 0],
           }}
+          style={{ zIndex: '-1', boxShadow: '3.5rem 3rem 1rem 1rem #facc15'}}
           transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut'  }}
         />
-
-<motion.div
-    className='w-3 h-3 rounded-3xl bg-yellow-500 shadow-2xl shadow-yellow-500 fixed top-0'
-    animate={{
-      scale: [1, 0, 1, 0, 1, 0, 1, 0, 1],
-      x: [0, 50, 25, 50, 40 ],
-      y: [0, window.outerHeight],
-    }}
-    transition={{ duration: 10, ease: 'linear', repeat: Infinity }}
-  />
-      </div>
+      </motion.div>
+      <About isOpen={aboutModal} onClose={() => setAboutModal(false)}/>
+      <FallingStar/>
     </motion.div>
   )
 }
