@@ -16,7 +16,7 @@ export function Slider({ slides }: Props) {
                     x: ['-100%', '0%'],
                     transition: {
                         ease: 'linear',
-                        duration: 10,
+                        duration: 20,
                         repeat: Infinity,
                     }
                 }}

@@ -9,7 +9,7 @@ const GlowWrapper = ({ colors, children }: Props) => {
 
     return (
         <motion.div
-        className="relative rounded-lg shadow-none w-fit"
+            className="relative rounded-lg shadow-none w-fit"
         >
             <motion.div
                 className="absolute rounded-lg shadow-lg top-[15px] left-0 right-0 h-[80%] w-full md:h-[50%] blur-lg mx-auto" 

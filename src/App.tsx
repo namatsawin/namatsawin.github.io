@@ -1,6 +1,6 @@
 import { motion } from "framer-motion"
 
-import ButtonCube from './components/Button'
+import Button from './components/Button'
 import GlowWrapper from './components/GlowWrapper'
 import HumanImage from './assets/images/human.webp'
 import FallingStar from "./components/FallingStar"
@@ -11,9 +11,9 @@ function App() {
   const [aboutModal, setAboutModal] = useState(false)
 
   return (
-    <motion.div className="my-auto mx-10 rounded-xl max-w-[1366px] h-full">
+    <motion.div className="pt-20 pb-5 px-10 rounded-xl max-w-[1366px] h-full">
       <motion.div 
-        className="flex flex-col gap-10 p-0 md:p-10 relative"
+        className="flex flex-col gap-10 relative mt-10"
         initial={{
           opacity: 0,
           y: -25, 
@@ -32,29 +32,29 @@ function App() {
       >
        
        <GlowWrapper>
-          <h1 className="w-fit p-0 text-yellow-500 text-3xl font-bold text-center md:text-left" style={{ textShadow: '1px 1px 2px #facc15'}}>
+          <h1 className="p-0 text-yellow-500 text-3xl font-bold text-center md:text-left" style={{ textShadow: '1px 1px 2px #facc15'}}>
             NAMATSAWIN BUNTARAWA
           </h1>
        </GlowWrapper>
      
 
-        <div className="text-center md:max-w-[70%] md:text-left">
-        I am a passionate individual with a fervent dedication to crafting outstanding digital experiences. My enthusiasm for innovation and continuous learning fuels my ability to quickly adapt and contribute effectively to diverse teams and projects.
-        </div>
+        <p className="text-center md:max-w-[70%] md:text-left text-yellow-100">
+          I am a passionate individual with a fervent dedication to crafting outstanding digital experiences. My enthusiasm for innovation and continuous learning fuels my ability to quickly adapt and contribute effectively to diverse teams and projects.
+        </p>
 
-        <div className="grid md:flex gap-5 py-10">
-          <ButtonCube onClick={() => setAboutModal(!aboutModal)}>
+        <div className="grid sm:flex gap-6 py-10">
+          <Button onClick={() => setAboutModal(!aboutModal)}>
             About
-          </ButtonCube>
-          <ButtonCube>
+          </Button>
+          <Button>
             Experience
-          </ButtonCube>
-          <ButtonCube>
+          </Button>
+          <Button>
             Portfolio
-          </ButtonCube>
-          <ButtonCube>
+          </Button>
+          <Button>
             Contact
-          </ButtonCube>
+          </Button>
         </div>
 
         <motion.img 

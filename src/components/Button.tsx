@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from 'framer-motion'
 
 interface Props extends React.PropsWithChildren {
     onClick?: React.MouseEventHandler<HTMLButtonElement>
@@ -6,13 +7,17 @@ interface Props extends React.PropsWithChildren {
 
 export function Button({ children, onClick }: Props) {
     return (
-        <button 
-            className="py-4 px-8 rounded-3xl shadow-md shadow-yellow-500 text-yellow-500"
-            style={{ boxShadow: '0 0 0 1px #facc15'}}
+        <motion.button 
+            className="py-3 px-8 font-bold text-yellow-100 border border-yellow-100"
             onClick={onClick}
+            whileHover={{
+                scale: 1.1,
+                borderColor: '#eab308',
+                color: '#eab308'
+            }}
         >
             {children}
-        </button>
+        </motion.button>
         
     )
 }
