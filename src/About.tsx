@@ -41,42 +41,45 @@ export function About({ isOpen, onClose }: Props) {
                         <div className="flex flex-col gap-4 mt-4">
                             <Slider
                                 slides={[
-                                    <StackIcon name="js" className="px-4" />,
-                                    <StackIcon name="typescript" className="px-4" />,
-                                    <StackIcon name="csharp" className="px-4" />,
-                                    <StackIcon name="vuejs" className="px-4"/>,
-                                    <StackIcon name="reactjs" className="px-4"/>,
-                                    <StackIcon name="redux" className="px-4" />,
-                                    <StackIcon name="nextjs" className="px-4" />,
-                                    <StackIcon name="vitejs" className="px-4" />,
-                                    <StackIcon name="tailwindcss"  className="px-4" />,
-                                    <StackIcon name="html5" className="px-4" />,
-                                    <StackIcon name="css3"  className="px-4" />,
-                                    <StackIcon name="sass" className="px-4" />,
-                                    <StackIcon name="storybook" className="px-4" />,
-                                    <StackIcon name="webpack" className="px-4" />,
-                                    <StackIcon name="babel" className="px-4" />,
+                                    <StackIcon name="js" className="max-w-16 max-h-16 px-1" />,
+                                    <StackIcon name="typescript" className="max-w-16 max-h-16 px-1" />,
+                                    <StackIcon name="csharp" className="max-w-16 max-h-16 px-1" />,
+                                    <StackIcon name="vuejs" className="max-w-16 max-h-16 px-1"/>,
+                                    <StackIcon name="reactjs" className="max-w-16 max-h-16 px-1"/>,
+                                    <StackIcon name="redux" className="max-w-16 max-h-16 px-1" />,
+                                    <StackIcon name="nextjs" className="max-w-16 max-h-16 px-1" />,
+                                    <StackIcon name="tailwindcss"  className="max-w-16 max-h-16 px-1" />,
+                                    <StackIcon name="html5" className="max-w-16 max-h-16 px-1" />,
+                                    <StackIcon name="css3"  className="max-w-16 max-h-16 px-1" />,
                                 ]}
                             />
 
                             <Slider slides={[
-                                    <StackIcon name="nodejs" className="px-4" />,
-                                    <StackIcon name="npm" className="px-4" />,
-                                    <StackIcon name="nestjs" className="px-4" />,
-                                    <StackIcon name="laravel" className="px-4" />,
-                                    <StackIcon name="pugjs" className="px-4" />,
-                                    <StackIcon name="prisma" className="px-4" />,
-                                    <StackIcon name="postgresql" className="px-4" />,
-                                    <StackIcon name="mysql" className="px-4" />,
-                                    <StackIcon name="mongodb" className="px-4" />,
-                                    <StackIcon name="firebase" className="px-4" />,
-                                    <StackIcon name="postman" className="px-4" />,
-                                    <StackIcon name="jest" className="px-4" />,
-                                    <StackIcon name="docker" className="px-4" />,
-                                    <StackIcon name="aws" className="px-4" />,
-                                    <StackIcon name="elastic" className="px-4" />,
-                                    <StackIcon name="ec2" className="px-4" />
+                                    <StackIcon name="nodejs" className="max-w-16 max-h-16 px-1" />,
+                                    <StackIcon name="npm" className="max-w-16 max-h-16 px-1" />,
+                                    <StackIcon name="nestjs" className="max-w-16 max-h-16 px-1" />,
+                                    <StackIcon name="laravel" className="max-w-16 max-h-16 px-1" />,
+                                    <StackIcon name="pugjs" className="max-w-16 max-h-16 px-1" />,
+                                    <StackIcon name="prisma" className="max-w-16 max-h-16 px-1" />,
+                                    <StackIcon name="postgresql" className="max-w-16 max-h-16 px-1" />,
+                                    <StackIcon name="mysql" className="max-w-16 max-h-16 px-1" />,
+                                    <StackIcon name="mongodb" className="max-w-16 max-h-16 px-1" />,
+                                    <StackIcon name="firebase" className="max-w-16 max-h-16 px-1" />,
                             ]} />
+
+                            <Slider 
+                                slides={[
+                                    <StackIcon name="vitejs" className="max-w-16 max-h-16 px-1" />,
+                                    <StackIcon name="storybook" className="max-w-16 max-h-16 px-1" />,
+                                    <StackIcon name="webpack" className="max-w-16 max-h-16 px-1" />,
+                                    <StackIcon name="babel" className="max-w-16 max-h-16 px-1" />,
+                                    <StackIcon name="docker" className="max-w-16 max-h-16 px-1" />,
+                                    <StackIcon name="aws" className="max-w-16 max-h-16 px-1" />,
+                                    <StackIcon name="elastic" className="max-w-16 max-h-16 px-1" />,
+                                    <StackIcon name="ec2" className="max-w-16 max-h-16 px-1" />,
+                                    <StackIcon name="postman" className="max-w-16 max-h-16 px-1" />,
+                                    <StackIcon name="jest" className="max-w-16 max-h-16 px-1" />,
+                            ]}/>
 
                         </div>
                 </section>

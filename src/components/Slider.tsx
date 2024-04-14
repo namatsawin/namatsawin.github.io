@@ -9,7 +9,6 @@ export function Slider({ slides }: Props) {
 
     return (
         <div className="relative w-full overflow-hidden">
-            {/* Wrapping div for seamless looping */}
             <motion.div
                 className="flex"
                 animate={{
@@ -21,7 +20,6 @@ export function Slider({ slides }: Props) {
                     }
                 }}
             >
-                {/* Render duplicated slides */}
                 {duplicatedSlides.map((slide, index) => (
                     <div key={index} className="flex-shrink-0" style={{ width: `${100 / slides.length}%` }}>
                         <button className="flex flex-col items-center justify-center h-full text-6xl">
