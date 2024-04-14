@@ -11,7 +11,7 @@ function App() {
   const [aboutModal, setAboutModal] = useState(false)
 
   return (
-    <motion.div className="pt-20 pb-5 px-10 rounded-xl max-w-[1366px] h-full">
+    <motion.div className="pt-20 pb-10 px-10 rounded-xl max-w-[1366px] h-full">
       <motion.div 
         className="flex flex-col gap-10 relative mt-10"
         initial={{
