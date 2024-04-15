@@ -62,7 +62,7 @@ function App() {
 
         <motion.img 
           src={HumanImage} 
-          className="absolute right-[30px] bottom-0 opacity-30 border-none border-yellow-600 rounded-[50%] blur-xl lg:blur-none"
+          className="absolute right-[30px] bottom-0 opacity-30 border-none border-yellow-600 rounded-[50%] blur-lg sm:blur-md md:blur-sm lg:blur-none"
           width={500}
           height={500} 
           animate={{
@@ -77,7 +77,7 @@ function App() {
       <FallingStar/>
 
       { import.meta.env.VITE_BUILD_AT && 
-        <div className="fixed bottom-0 right-0 p-5 text-neutral-600">
+        <div className="fixed bottom-0 right-0 px-4 py-1 text-neutral-600 hidden md:block">
         Build at {import.meta.env.VITE_BUILD_AT}
         </div>
       }
