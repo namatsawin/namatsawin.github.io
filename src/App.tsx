@@ -62,7 +62,7 @@ function App() {
 
         <motion.img 
           src={HumanImage} 
-          className="absolute right-[30px] bottom-0 opacity-30 border-none border-yellow-600 rounded-[50%]"
+          className="absolute right-[30px] bottom-0 opacity-30 border-none border-yellow-600 rounded-[50%] blur-xl lg:blur-none"
           width={500}
           height={500} 
           animate={{
