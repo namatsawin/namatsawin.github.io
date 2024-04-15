@@ -62,13 +62,13 @@ function App() {
 
         <motion.img 
           src={HumanImage} 
-          className="absolute right-[30px] bottom-0 opacity-30 border-none border-yellow-600 rounded-[50%] blur-lg sm:blur-md md:blur-sm lg:blur-none"
+          className="absolute right-[30px] bottom-0 opacity-30 border-none rounded-[50%] blur-lg sm:blur-md md:blur-sm lg:blur-none"
+          style={{ zIndex: '-1', boxShadow: '3.5rem 3rem 1rem 1rem #facc15'}}
           width={500}
           height={500} 
           animate={{
             y: [0, -10, 0, 10, 0],
           }}
-          style={{ zIndex: '-1', boxShadow: '3.5rem 3rem 1rem 1rem #facc15'}}
           transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut'  }}
         />
       </motion.div>

@@ -11,6 +11,21 @@ interface Props extends React.PropsWithChildren {
 }
 
 export function About({ isOpen, onClose }: Props) {
+    const educationStories = [
+        { 
+            date: '2018-2020',
+            title: 'Bachelor of Technology at Nongkhai Technical College',
+            description: 'Focused on electronics, microcontrollers, Arduino, PLC, developing strong problem-solving skills',
+            additional: 'Grade: 3.47'
+        },
+        { 
+            date: '2016-2018',
+            title: 'Diploma in Electronics at Nongkhai Technical College',
+            description: 'Emphasized electronics fundamentals, including microcontrollers, Arduino, developing problem-solving skills',
+            additional: 'Grade: 3.22'
+        }
+    ]
+    
     return (
         <Modal isOpen={isOpen} onClose={onClose}>
             <div className="flex flex-col gap-6">
@@ -86,20 +101,7 @@ export function About({ isOpen, onClose }: Props) {
 
                 <section className="flex flex-col gap-2">
                     <h1 className="text-xl font-bold text-yellow-500"> Education </h1>
-                    <Timeline stories={[
-                        { 
-                            date: '2018-2020',
-                            title: 'Bachelor of Technology at Nongkhai Technical College',
-                            description: 'Focused on electronics, microcontrollers, Arduino, PLC, developing strong problem-solving skills',
-                            additional: 'Grade: 3.47'
-                        },
-                        { 
-                            date: '2016-2018',
-                            title: 'Diploma in Electronics at Nongkhai Technical College',
-                            description: 'Emphasized electronics fundamentals, including microcontrollers, Arduino, developing problem-solving skills',
-                            additional: 'Grade: 3.22'
-                        }
-                    ]} />
+                    <Timeline stories={educationStories} />
                 </section>
             </div>
         </Modal>
