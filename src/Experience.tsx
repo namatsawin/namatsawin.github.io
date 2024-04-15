@@ -4,6 +4,7 @@ import Timeline from "./components/Timeline";
 import NipaIcon from './assets/images/nipa.webp'
 import LivingMobileIcon from './assets/images/livingmobile.webp'
 import InterfaceIcon from './assets/images/interface.webp'
+import TitlePeriodic from "./components/TitlePeriodic";
 
 interface Props extends React.PropsWithChildren {
     isOpen: boolean,
@@ -54,16 +55,8 @@ export function Experience({ isOpen, onClose }: Props) {
     ]
     return (
         <Modal isOpen={isOpen} onClose={onClose}>
-            <div className="flex flex-col gap-8 de">
-                <div className='flex justify-center items-center gap-2'>
-                    <span className='text-3xl text-yellow-500 px-4 border-4 border-double border-yellow-500 rounded shadow-md shadow-yellow-500'>
-                        E
-                        <span className='text-xl'>x</span>
-                    </span>
-                    <span className='text-xl text-yellow-500 text-center'>
-                        perience
-                    </span>
-                </div>
+            <div className="flex flex-col gap-8">
+                <TitlePeriodic text="Experience" className="justify-center" />
                 <Timeline stories={experienceStories} />
             </div>
         </Modal>

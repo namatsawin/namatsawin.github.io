@@ -7,11 +7,14 @@ import FallingStar from "./components/FallingStar"
 import { useState } from "react"
 import About from "./About"
 import Experience from "./Experience"
+import Portfolio from "./Portfolio"
+import Contact from "./Contact"
 
 function App() {
   const [aboutModal, setAboutModal] = useState(false)
   const [experienceModal, setExperienceModal] = useState(false)
-
+  const [portfolioModal, setPortfolioModal] = useState(false)
+  const [contactModal, setContactModal] = useState(false)
 
   return (
     <motion.div className="pt-20 pb-10 px-10 rounded-xl max-w-[1366px] h-full">
@@ -52,10 +55,10 @@ function App() {
           <Button onClick={() => setExperienceModal(!experienceModal)}>
             Experience
           </Button>
-          <Button>
+          <Button onClick={() => setPortfolioModal(!portfolioModal)}>
             Portfolio
           </Button>
-          <Button>
+          <Button onClick={() => setContactModal(!contactModal)}>
             Contact
           </Button>
         </div>
@@ -74,6 +77,10 @@ function App() {
       </motion.div>
       <About isOpen={aboutModal} onClose={() => setAboutModal(false)}/>
       <Experience isOpen={experienceModal} onClose={() => setExperienceModal(false)} />
+      <Portfolio isOpen={portfolioModal} onClose={() => setPortfolioModal(false)} />
+      <Contact isOpen={contactModal} onClose={() => setContactModal(false)}/>
+
+
       <FallingStar/>
 
       { import.meta.env.VITE_BUILD_AT && 
