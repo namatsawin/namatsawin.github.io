@@ -31,6 +31,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Set datetime in .env
+        run: echo "VITE_BUILD_AT=$(date +'%d %b %Y %T %Z')" >> .env
       - name: Install Node.js
         uses: actions/setup-node@v2
         with:

@@ -26,13 +26,13 @@ export function About({ isOpen, onClose }: Props) {
                         transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut'  }}
                     />
                     <div>
-                        <h1 className="text-center text-yellow-500 font-bold">Namatsawin Buntarwa (Care)</h1>
+                        <h1 className="text-center text-yellow-500 font-bold text-xl">Namatsawin Buntarwa (Care)</h1>
                     </div>
                 </section>
                 <section className="flex flex-col gap-2">
                     <h1 className="text-xl font-bold text-yellow-500"> History </h1>
                     <div className="text-sm">
-                        Hi, I'm Care. I was born in Thailand, and my nationality is one hundred percent Thai. When I was young, I liked playing computer games like Yuri, Counter-Strike, and others, just like other young boys. I intended to enter a major related to computers. Unfortunately, there were no majors directly related to computers, so I chose to enter the electronics major instead. There were a few classes related to programming, like Arduino, but I was not that interested because I felt it was difficult for me and had no idea how important it was. It wasn't until I was an intern during the last year of my bachelor's degree that I got a chance to help the R&D department develop a WinForm Application to be used in Industrial Automatic Machines. I was taught by seniors, and they changed my perspective about programming. It's useful, fun, and used for several reasons, like making things easier, standardizing production to have higher quality, speed, and efficiency. After my graduation, I took a gap for a couple of months to explore the various types of programmers and made the decision to learn about web development and start my career with a full-stack position
+                        Hi, I'm Care. I was born in Thailand, and my nationality is one hundred percent Thai. When I was young, I liked playing computer games like Yuri, Counter-Strike, and others, just like other young boys. I intended to enter a major related to computers. Unfortunately, there were no majors directly related to computers, so I chose to enter the electronics major instead. There were a few classes related to programming, like Arduino, but I was not that interested because I felt it was difficult for me and had no idea how important it was. It wasn't until I was an intern during the last year of my bachelor's degree that I got a chance to help the R&D department develop a WinForm Application to be used in Industrial Automatic Machines. I was taught by seniors, and they changed my perspective about programming. It's useful, fun, and used for several reasons, like making things easier, standardizing production to have higher quality, speed, and efficiency. After my graduation, I took a gap for a couple of months to explore the various types of programmers and made the decision to learn about web development and start my career with a full-stack position.
                     </div>
                 </section>
 

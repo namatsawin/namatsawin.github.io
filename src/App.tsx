@@ -6,9 +6,12 @@ import HumanImage from './assets/images/human.webp'
 import FallingStar from "./components/FallingStar"
 import { useState } from "react"
 import About from "./About"
+import Experience from "./Experience"
 
 function App() {
   const [aboutModal, setAboutModal] = useState(false)
+  const [experienceModal, setExperienceModal] = useState(false)
+
 
   return (
     <motion.div className="pt-20 pb-10 px-10 rounded-xl max-w-[1366px] h-full">
@@ -38,7 +41,7 @@ function App() {
        </GlowWrapper>
      
 
-        <p className="text-center md:max-w-[70%] md:text-left text-yellow-100">
+        <p className="text-center md:max-w-[70%] md:text-left text-yellow-100 text-base">
           I am a passionate individual with a fervent dedication to crafting outstanding digital experiences. My enthusiasm for innovation and continuous learning fuels my ability to quickly adapt and contribute effectively to diverse teams and projects.
         </p>
 
@@ -46,7 +49,7 @@ function App() {
           <Button onClick={() => setAboutModal(!aboutModal)}>
             About
           </Button>
-          <Button>
+          <Button onClick={() => setExperienceModal(!experienceModal)}>
             Experience
           </Button>
           <Button>
@@ -70,7 +73,14 @@ function App() {
         />
       </motion.div>
       <About isOpen={aboutModal} onClose={() => setAboutModal(false)}/>
+      <Experience isOpen={experienceModal} onClose={() => setExperienceModal(false)} />
       <FallingStar/>
+
+      { import.meta.env.VITE_BUILD_AT && 
+        <div className="fixed bottom-0 right-0 p-5 text-neutral-600">
+        Build at {import.meta.env.VITE_BUILD_AT}
+        </div>
+      }
     </motion.div>
   )
 }

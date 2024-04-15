@@ -8,7 +8,7 @@ interface Props extends React.PropsWithChildren {
 export function Button({ children, onClick }: Props) {
     return (
         <motion.button 
-            className="py-3 px-8 font-bold text-yellow-100 border border-yellow-100 rounded"
+            className="py-3 px-8 font-bold text-yellow-100 border border-yellow-100 rounded text-base"
             onClick={onClick}
             whileHover={{
                 scale: 1.1,

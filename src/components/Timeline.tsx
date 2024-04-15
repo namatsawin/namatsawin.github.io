@@ -13,10 +13,10 @@ export function Timeline({ stories = [] }: Props) {
             {stories.map((story, index) => {
                 return (
                     <div className="flex gap-4 min-h-[100px] w-full" key={index}>
-                        <p className="w-[90px] font-bold">
+                        <p className="w-[90px] font-bold text-base">
                             {story.date}
                         </p>
-                        <div className="flex flex-col gap-1 items-center mt-1">
+                        <div className="flex flex-col gap-1 items-center mt-3">
                             <span 
                                 className={`min-w-2 min-h-2 rounded-[50%] bg-yellow-300`}
                                 style={{boxShadow: `0 0 5px 5px yellow` }}
