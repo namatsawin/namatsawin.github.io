@@ -22,9 +22,9 @@ export function Slider({ slides }: Props) {
             >
                 {duplicatedSlides.map((slide, index) => (
                     <div key={index} className="flex-shrink-0" style={{ width: `${100 / slides.length}%` }}>
-                        <button className="flex flex-col items-center justify-center h-full text-6xl">
+                        <div className="flex flex-col items-center justify-center h-full text-6xl">
                             {slide}
-                        </button>
+                        </div>
                     </div>
                 ))}
             </motion.div>

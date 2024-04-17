@@ -5,11 +5,12 @@ import CloseIcon from "../assets/icons/close.svg?react";
 interface Props extends React.PropsWithChildren {
     isOpen: boolean,
     hideClose?: boolean,
-    onClose?: React.MouseEventHandler<HTMLDivElement>
+    onClose?: React.MouseEventHandler<HTMLDivElement>,
+    bodyClass?: string;
 }
   
 
-const Modal = ({ isOpen, hideClose, children, onClose }: Props) => {
+const Modal = ({ isOpen, hideClose, children, onClose, bodyClass }: Props) => {
     return (
         <AnimatePresence
             mode="wait"
@@ -21,7 +22,7 @@ const Modal = ({ isOpen, hideClose, children, onClose }: Props) => {
                 <Backdrop onClick={onClose}>
                     <motion.div
                         onClick={(e) => e.stopPropagation()}  
-                        className="px-8 py-10 rounded-md min-w-[300px] min-h-[150px] max-w-[90%] max-h-[90%] md:max-w-[80%] md:max-h-[80%] overflow-y-auto"
+                        className={`px-8 py-10 rounded-md min-w-[300px] min-h-[150px] max-w-[90%] max-h-[90%] md:max-w-[80%] md:max-h-[80%] overflow-y-auto ${bodyClass}`}
                         variants={{
                             hidden: {
                                 x: -50,
