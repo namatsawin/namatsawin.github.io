@@ -1,7 +1,5 @@
 import Modal from "./components/Modal";
 import TitlePeriodic from "./components/TitlePeriodic";
-
-
 import OnlineOrderUI from './assets/images/online-order-ui.webp'
 import NigiwaiGoodWealthUI from './assets/images/nigiwai-good-wealth-ui.webp'
 import NigiwaiGoodWealthBackOfficeUI from './assets/images/nigiwai-good-wealth-backoffice-ui.webp'
@@ -58,7 +56,13 @@ export function Portfolio({ isOpen, onClose }: Props) {
                             className={`flex flex-col lg:grid gap-10 border-b-[2px] pb-10 border-neutral-700 last:border-none ${index % 2 ? 'lg:grid-cols-[1fr_auto]' : 'lg:grid-cols-[auto_1fr]'}`}
                         >
                             <div className={`flex justify-center items-center ${index % 2 ? 'order-first lg:order-last' : 'order-first'}`}>
-                                <img src={work.preview} width={500} height={400} className="rounded-xl" />
+                                <img 
+                                    src={work.preview} 
+                                    width={500} 
+                                    height={400} 
+                                    className="rounded-xl"  
+                                    loading="lazy" 
+                                />
                             </div>
                             <div className='flex flex-col gap-5'>
                                 <h1 className='text-xl text-yellow-200'>     
