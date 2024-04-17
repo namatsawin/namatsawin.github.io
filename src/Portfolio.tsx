@@ -61,7 +61,6 @@ export function Portfolio({ isOpen, onClose }: Props) {
                                     width={500} 
                                     height={400} 
                                     className="rounded-xl"  
-                                    loading="lazy" 
                                 />
                             </div>
                             <div className='flex flex-col gap-5'>
