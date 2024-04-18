@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { motion } from "framer-motion"
 
 import Button from './components/Button'
@@ -7,7 +7,6 @@ import FallingStar from "./components/FallingStar"
 import About from "./About"
 import Experience from "./Experience"
 import Portfolio from "./Portfolio"
-import Contact from "./Contact"
 import LinkedInIcon from './assets/icons/linkedin.svg?react'
 import GithubIcon from './assets/icons/github.svg?react'
 import CallIcon from './assets/icons/call.svg?react'
@@ -17,10 +16,20 @@ import HumanImage from './assets/images/human.webp'
 import ButtonAnchor from "./components/ButtonAnchor"
 
 function App() {
+  const urlSearchParams = new URLSearchParams(window.location.search).get('open')
+
   const [aboutModal, setAboutModal] = useState(false)
   const [experienceModal, setExperienceModal] = useState(false)
   const [portfolioModal, setPortfolioModal] = useState(false)
-  const [contactModal, setContactModal] = useState(false)
+
+  useEffect(() => {
+    switch (urlSearchParams?.toLocaleLowerCase()) {
+      case 'about': return setAboutModal(true)
+      case 'experience': return setExperienceModal(true)
+      case 'portfolio': return setPortfolioModal(true)
+      default: break;
+    }
+  }, [])
 
   return (
     <motion.div className="p-10 rounded-xl max-w-[1366px] h-full">
@@ -42,7 +51,6 @@ function App() {
           ease: 'easeOut',
         }}
       >
-       
        <GlowWrapper className="mx-auto md:mx-0">
           <h1 className="p-0 text-yellow-500 text-3xl font-bold text-center" style={{ textShadow: '1px 1px 2px #facc15'}}>
             NAMATSAWIN BUNTARAWA
@@ -102,8 +110,6 @@ function App() {
       <About isOpen={aboutModal} onClose={() => setAboutModal(false)}/>
       <Experience isOpen={experienceModal} onClose={() => setExperienceModal(false)} />
       <Portfolio isOpen={portfolioModal} onClose={() => setPortfolioModal(false)} />
-      <Contact isOpen={contactModal} onClose={() => setContactModal(false)}/>
-
 
       <FallingStar/>
 
