@@ -59,17 +59,6 @@ export function Portfolio({ isOpen, onClose }: Props) {
             showcase: MobileOrderUIShowcase
         },
         {
-            preview: POSBackofficeUI,
-            title: "Web Owner",
-            description: `A web application that allows owners to view their reports and manage aspects relevant to their restaurant, 
-            such as menus, inventory, promotions, mobile orders, online orders, etc. I was responsible for maintaining, fixing bugs, 
-            and adding features related to my work.`,
-            technologies: ['Javascript', 'Vue2', 'Element-UI', 'ExpressJS', 'PHP', 'Laravel', 'Postgresql', 'Elastic Beanstalk', 'S3'],
-            repository: 'Private',
-            endpoint: 'https://owner.foodstory.co',
-            showcase: POSBackOfficeUIShowcase,
-        },
-        {
             preview: OnlineOrderUI,
             title: "Online Order",
             description: `The food delivery platform is accessed primarily through LINE, a popular messaging app. 
@@ -82,6 +71,17 @@ export function Portfolio({ isOpen, onClose }: Props) {
             repository: 'Private',
             endpoint: 'https://order.foodstory.co',
             showcase: OnlineOrderUIShowcase,
+        },
+        {
+            preview: POSBackofficeUI,
+            title: "Web Owner",
+            description: `A web application that allows owners to view their reports and manage aspects relevant to their restaurant, 
+            such as menus, inventory, promotions, mobile orders, online orders, etc. I was responsible for maintaining, fixing bugs, 
+            and adding features related to my work.`,
+            technologies: ['Javascript', 'Vue2', 'Element-UI', 'ExpressJS', 'PHP', 'Laravel', 'Postgresql', 'Elastic Beanstalk', 'S3'],
+            repository: 'Private',
+            endpoint: 'https://owner.foodstory.co',
+            showcase: POSBackOfficeUIShowcase,
         },
         {
             preview: NigiwaiGoodWealthUI,
