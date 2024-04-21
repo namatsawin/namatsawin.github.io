@@ -15,11 +15,13 @@ import MicroserviceEcommerceUI from './assets/images/microservice-ecommerce-ui.w
 import MovieWebUI from './assets/images/movie-web-ui.webp'
 import TodoListUI from './assets/images/todo-list-ui.webp'
 import TicTacToeUI from './assets/images/tictactoe-ui.webp'
+import POSBackofficeUI from './assets/images/pos-backoffice-ui.webp'
 
 import MobileOrderUIShowcase from './assets/ui-showcases/mobile-order.mp4'
 import OnlineOrderUIShowcase from './assets/ui-showcases/online-order.mp4'
 import NigiwaiGoodWealthUIShowcase from './assets/ui-showcases/nigiwai-good-wealth.mp4'
 import NigiwaiGoodWealthBackOfficeUIShowcase from './assets/ui-showcases/nigiwai-good-wealth-admin.mp4'
+import POSBackOfficeUIShowcase from './assets/ui-showcases/pos-backoffice-uishowcase.mp4'
 
 interface Props extends React.PropsWithChildren {
     isOpen: boolean,
@@ -55,6 +57,17 @@ export function Portfolio({ isOpen, onClose }: Props) {
             repository: 'Private',
             endpoint: 'https://mobile-order-v2.foodstory.co',
             showcase: MobileOrderUIShowcase
+        },
+        {
+            preview: POSBackofficeUI,
+            title: "Web Owner",
+            description: `A web application that allows owners to view their reports and manage aspects relevant to their restaurant, 
+            such as menus, inventory, promotions, mobile orders, online orders, etc. I was responsible for maintaining, fixing bugs, 
+            and adding features related to my work.`,
+            technologies: ['Javascript', 'Vue2', 'Element-UI', 'ExpressJS', 'PHP', 'Laravel', 'Postgresql', 'Elastic Beanstalk', 'S3'],
+            repository: 'Private',
+            endpoint: 'https://owner.foodstory.co',
+            showcase: POSBackOfficeUIShowcase,
         },
         {
             preview: OnlineOrderUI,
