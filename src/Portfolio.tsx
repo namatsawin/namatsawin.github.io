@@ -106,7 +106,7 @@ export function Portfolio({ isOpen, onClose }: Props) {
             `,
             technologies: ['Typescript', 'Vue3', 'Element-UI', 'NestJS', 'DocumentDB', 'Elastic Beanstalk', 'S3'],
             repository: 'Private',
-            endpoint: '-',
+            endpoint: 'https://admin.ngwfood.com',
             showcase: NigiwaiGoodWealthBackOfficeUIShowcase
         },
         {
@@ -145,7 +145,7 @@ export function Portfolio({ isOpen, onClose }: Props) {
             The system retrieves movie information from a third-party API (themoviedb.org)`,
             technologies: ['ReactJS', 'Redux', 'Styled Components'],
             repository: 'https://github.com/namatsawin/Movie-web',
-            endpoint: 'https://5f39efd4ad43c49d76a78a2b--pedantic-pasteur-becb03.netlify.app/'
+            endpoint: 'https://5f39efd4ad43c49d76a78a2b--pedantic-pasteur-becb03.netlify.app'
         },
         {
             preview: TicTacToeUI,
@@ -161,7 +161,7 @@ export function Portfolio({ isOpen, onClose }: Props) {
             description: `TODO List! It's a personal project I was writing for fun`,
             technologies: ['ReactJS', 'Redux', 'Styled Components'],
             repository: 'https://github.com/namatsawin/Todolist',
-            endpoint: 'https://5f35d949e1449d1ebd8e5631--musing-brattain-95ba1e.netlify.app/'
+            endpoint: 'https://5f35d949e1449d1ebd8e5631--musing-brattain-95ba1e.netlify.app'
         }
     ]
 
