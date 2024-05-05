@@ -78,7 +78,7 @@ function App() {
         </div>
 
         <p className="text-center md:max-w-[70%] md:text-left text-yellow-100 text-base">
-          I am a passionate individual with a fervent dedication to crafting outstanding digital experiences. My enthusiasm for innovation and continuous learning fuels my ability to quickly adapt and contribute effectively to diverse teams and projects.
+        I'm a Full Stack Developer passionate about crafting awesome things for the web. I'm known for my knack for picking up new skills fast. When I say I'll do something, I stick to it like glue – you can trust me to get the job done without any hiccups. I take my commitments seriously and always strive to deliver top-quality work, no matter what. I'm eager to bring my dedication and expertise to your projects!
         </p>
 
         <div className="grid md:flex gap-6 py-10">
