@@ -45,7 +45,7 @@ export function Portfolio({ isOpen, onClose }: Props) {
         {
             preview: MobileOrderUI,
             title: 'Mobile Order',
-            description: `I was a core team member responsible for rebuilding a web application from the ground up to revamp its entire UI and increase maintainability with modern stacks. 
+            description: `I was leading to rebuilding a web application from the ground up to revamp its entire UI and increase maintainability with modern stacks. 
             I continued to make significant contributions by developing upcoming features. 
             This application allows customers to place orders easily by scanning a QR code with their mobile device. 
             The system offers two QR code options: dynamic and static. Dynamic QR codes require a new code to be printed each time, 
