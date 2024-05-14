@@ -14,6 +14,7 @@ import EmailIcon from './assets/icons/email.svg?react'
 
 import HumanImage from './assets/images/human.webp'
 import ButtonAnchor from "./components/ButtonAnchor"
+import Resume from "./Resume"
 
 function App() {
   const urlSearchParams = new URLSearchParams(window.location.search).get('open')
@@ -21,6 +22,7 @@ function App() {
   const [aboutModal, setAboutModal] = useState(false)
   const [experienceModal, setExperienceModal] = useState(false)
   const [portfolioModal, setPortfolioModal] = useState(false)
+  const [resumeModal, setResumeModal] = useState(false)
 
   useEffect(() => {
     switch (urlSearchParams?.toLocaleLowerCase()) {
@@ -91,6 +93,9 @@ function App() {
           <Button onClick={() => setPortfolioModal(!portfolioModal)}>
             Portfolio
           </Button>
+          <Button onClick={() => setResumeModal(!resumeModal)}>
+            Resume
+          </Button>
         </div>
 
       
@@ -110,6 +115,7 @@ function App() {
       <About isOpen={aboutModal} onClose={() => setAboutModal(false)}/>
       <Experience isOpen={experienceModal} onClose={() => setExperienceModal(false)} />
       <Portfolio isOpen={portfolioModal} onClose={() => setPortfolioModal(false)} />
+      <Resume isOpen={resumeModal} onClose={() => setResumeModal(false)} />
 
       <FallingStar/>
 
