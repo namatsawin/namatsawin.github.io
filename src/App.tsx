@@ -32,7 +32,7 @@ function App() {
   }, [])
 
   return (
-    <motion.div className="p-10 rounded-xl max-w-[1366px] h-full">
+    <motion.div className="p-10 rounded-xl max-w-[1366px] h-screen sm:h-full">
       <motion.div 
         className="flex flex-col gap-10 relative mt-10"
         initial={{
