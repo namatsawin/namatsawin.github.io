@@ -18,11 +18,17 @@ export function Experience({ isOpen, onClose }: Props) {
             title: 'Full Stack Developer at Living Mobile Co., Ltd.',
             icon: <img src={LivingMobileIcon} width={40} height={40} className="mx-2" />,
             description: `
-            To face different challenges, I decided to move to a company that provides restaurant solutions to enhance efficiency and quality in the restaurant business. Initially, I wasn't assigned to a specific team but was tasked with revamping the entire UI of the web application called 'Online Order,' a food delivery platform similar to Grab or Uber Eats. After completing this assignment, I joined the market team to develop and maintain a website called 'Foodstory Market' that allows restaurant owners to purchase ingredients to restock their inventory. I also developed the web application 'Nigiwai Good Wealth' from scratch, a platform that supports franchisees in inventory restocking and franchise management.
-
-            After the release of Nigiwai Good Wealth, the market team was disbanded due to business reasons, and I was transferred to the core team. There, I undertook the task of revamping the web application 'Mobile Order,' a platform that allows customers visiting a restaurant to place orders via the web application. However, it involved more than just UI revamping due to its legacy code. So, I opted to rebuild it from the ground up using modern technologies to ensure higher quality, maintainability, and performance.
-            
-            Following this, the company merged with LINE MAN Wongnai, giving me the chance to work closely with their developers on the 'Mobile Order' project. It was both rewarding and demanding, especially as performance reviews approached. After the reviews, I was offered the opportunity to transition to a permanent position at LINE MAN Wongnai. Unfortunately, my Working Holiday Visa was nearing expiration, prompting me to resign from the job to explore opportunities in Australia.
+            To face different challenges, I decided to move to a company that provides restaurant solutions to enhance efficiency and quality in the restaurant business. 
+            Initially, I wasn't assigned to a specific team but was tasked with revamping the entire UI of the web application called 'Online Order' 
+            a food delivery platform similar to Grab or Uber Eats. After completing this assignment, I joined the market team to develop and maintain 
+            a website called 'Foodstory Market' that allows restaurant owners to purchase ingredients to restock their inventory. 
+            I also developed the web application 'Nigiwai Good Wealth' from scratch, a platform that supports franchisees in inventory restocking and franchise management.
+            After the release of Nigiwai Good Wealth, the market team was disbanded due to business reasons, and I was transferred to the core team. There,
+            I undertook the task of revamping the web application 'Mobile Order,' a platform that allows customers visiting 
+            a restaurant to place orders via the web application. However, it involved more than just UI revamping due to its legacy code. 
+            So, I opted to rebuild it from the ground up using modern technologies to ensure higher quality, maintainability, and performance.
+            Following this, the company merged with LINE MAN Wongnai, giving me the chance to work closely with their developers on 
+            the 'Mobile Order' project to develop and improve upcoming and existing features.
             `,
         },
         {
