@@ -25,8 +25,8 @@ export function Experience({ isOpen, onClose }: Props) {
             I also developed the web application 'Nigiwai Good Wealth' from scratch, a platform that supports franchisees in inventory restocking and franchise management.
             After the release of Nigiwai Good Wealth, the market team was disbanded due to business reasons, and I was transferred to the core team. There,
             I undertook the task of entirely revamping the web application 'Mobile Order' a platform that allows customers visiting 
-            a restaurant to place orders via the web application. However, it involved more than just UI revamping due to its legacy code. 
-            So, I opted to rebuild it from the ground up using modern technologies to ensure higher quality, maintainability, and performance.
+            a restaurant to place orders via the web application. However, it involved more than just UI revamping.
+            I led the effort to rebuild it from the ground up using modern technologies to ensure higher quality, maintainability, and performance.
             Following this, the company merged with LINE MAN Wongnai, giving me the chance to work closely with their developers on 
             the 'Mobile Order' project to develop and improve upcoming and existing features.
             `,
