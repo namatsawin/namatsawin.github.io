@@ -119,50 +119,50 @@ export function Portfolio({ isOpen, onClose }: Props) {
             repository: 'Private',
             endpoint: 'https://portal.nipa.cloud',
         },
-        {
-            preview: ParkingLotSystemUI,
-            title: 'Simple APIs with Parking Lot System',
-            description: `This is one of my personal projects. During a company test, 
-            I was given an assignment to demonstrate my backend development skills by bulding simple APIs for a parking lot system.`,
-            technologies: ['NestJS', 'PogresQL', "Prisma"],
-            repository: 'https://github.com/namatsawin/parking-lot-system',
-            endpoint: '-'
-        },
-        {
-            preview: MicroserviceEcommerceUI,
-            title: 'Simple Microservice with E-commerce System',
-            description: `This is one of my personal projects. During a company test, 
-            I was given an assignment to demonstrate my backend development skills by building simple microservice for an e-commerce system.`,
-            technologies: ['NestJS', 'PogresQL', "TypeORM"],
-            repository: 'https://github.com/namatsawin/ecommerce-microservice',
-            endpoint: '-'
-        },
-        {
-            preview: MovieWebUI,
-            title: 'Movie Shop',
-            description: `This is one of my personal projects. During a company test, 
-            I was given an assignment to demonstrate my frontend development skills by building a simple e-commerce system for movies. 
-            The system retrieves movie information from a third-party API (themoviedb.org)`,
-            technologies: ['ReactJS', 'Redux', 'Styled Components'],
-            repository: 'https://github.com/namatsawin/Movie-web',
-            endpoint: 'https://5f39efd4ad43c49d76a78a2b--pedantic-pasteur-becb03.netlify.app'
-        },
-        {
-            preview: TicTacToeUI,
-            title: 'Tic Tac Toe',
-            description: `Tic Tac Toe! It's a personal project I was writing for fun`,
-            technologies: ['ReactJS', 'Redux'],
-            repository: 'https://github.com/namatsawin/tictoc',
-            endpoint: 'https://5f348ae085c4c4ec25a89763--friendly-golick-0a6986.netlify.app'
-        },
-        {
-            preview: TodoListUI,
-            title: 'TODO List',
-            description: `TODO List! It's a personal project I was writing for fun`,
-            technologies: ['ReactJS', 'Redux', 'Styled Components'],
-            repository: 'https://github.com/namatsawin/Todolist',
-            endpoint: 'https://5f35d949e1449d1ebd8e5631--musing-brattain-95ba1e.netlify.app'
-        }
+        // {
+        //     preview: ParkingLotSystemUI,
+        //     title: 'Simple APIs with Parking Lot System',
+        //     description: `This is one of my personal projects. During a company test, 
+        //     I was given an assignment to demonstrate my backend development skills by bulding simple APIs for a parking lot system.`,
+        //     technologies: ['NestJS', 'PogresQL', "Prisma"],
+        //     repository: 'https://github.com/namatsawin/parking-lot-system',
+        //     endpoint: '-'
+        // },
+        // {
+        //     preview: MicroserviceEcommerceUI,
+        //     title: 'Simple Microservice with E-commerce System',
+        //     description: `This is one of my personal projects. During a company test, 
+        //     I was given an assignment to demonstrate my backend development skills by building simple microservice for an e-commerce system.`,
+        //     technologies: ['NestJS', 'PogresQL', "TypeORM"],
+        //     repository: 'https://github.com/namatsawin/ecommerce-microservice',
+        //     endpoint: '-'
+        // },
+        // {
+        //     preview: MovieWebUI,
+        //     title: 'Movie Shop',
+        //     description: `This is one of my personal projects. During a company test, 
+        //     I was given an assignment to demonstrate my frontend development skills by building a simple e-commerce system for movies. 
+        //     The system retrieves movie information from a third-party API (themoviedb.org)`,
+        //     technologies: ['ReactJS', 'Redux', 'Styled Components'],
+        //     repository: 'https://github.com/namatsawin/Movie-web',
+        //     endpoint: 'https://5f39efd4ad43c49d76a78a2b--pedantic-pasteur-becb03.netlify.app'
+        // },
+        // {
+        //     preview: TicTacToeUI,
+        //     title: 'Tic Tac Toe',
+        //     description: `Tic Tac Toe! It's a personal project I was writing for fun`,
+        //     technologies: ['ReactJS', 'Redux'],
+        //     repository: 'https://github.com/namatsawin/tictoc',
+        //     endpoint: 'https://5f348ae085c4c4ec25a89763--friendly-golick-0a6986.netlify.app'
+        // },
+        // {
+        //     preview: TodoListUI,
+        //     title: 'TODO List',
+        //     description: `TODO List! It's a personal project I was writing for fun`,
+        //     technologies: ['ReactJS', 'Redux', 'Styled Components'],
+        //     repository: 'https://github.com/namatsawin/Todolist',
+        //     endpoint: 'https://5f35d949e1449d1ebd8e5631--musing-brattain-95ba1e.netlify.app'
+        // }
     ]
 
     const isValidUrl = (urlString?: string) => {
