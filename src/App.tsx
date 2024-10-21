@@ -101,9 +101,9 @@ function App() {
           <Button onClick={() => setExperienceModal(!experienceModal)}>
             Experience
           </Button>
-          <Button onClick={() => setPortfolioModal(!portfolioModal)}>
+          {/* <Button onClick={() => setPortfolioModal(!portfolioModal)}>
             Portfolio
-          </Button>
+          </Button> */}
           <Button onClick={() => setResumeModal(!resumeModal)}>Resume</Button>
         </div>
 
